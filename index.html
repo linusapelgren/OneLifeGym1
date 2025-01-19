@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="body.css" type="text/css"> <!--CSS File-->
+    <title>OneLife Gym - Premier Bodybuilding & Sunbed Facility</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">OneLife Gym</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Build Your Dream Body at OneLife Gym</h1>
+                <p>Premier bodybuilding equipment and top-of-the-line sunbeds</p>
+                <a href="#pricing" class="cta-button">Join Now</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About OneLife Gym</h2>
+            <p>OneLife Gym is dedicated to helping you achieve your ultimate physique. Our state-of-the-art facility offers the latest in bodybuilding equipment and premium sunbed services. Whether you're a beginner or a seasoned bodybuilder, we have everything you need to transform your body and boost your confidence.</p>
+        </section>
+
+        <section id="facilities">
+            <h2>Our Facilities</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>Bodybuilding Equipment</h3>
+                    <p>Access to a wide range of free weights, resistance machines, and cardio equipment to help you build muscle and burn fat effectively.</p>
+                </div>
+                <div class="feature">
+                    <h3>Professional Sunbeds</h3>
+                    <p>Achieve the perfect tan with our modern sunbed facilities, featuring both stand-up and lay-down options for your comfort.</p>
+                </div>
+                <div class="feature">
+                    <h3>Expert Trainers</h3>
+                    <p>Our certified personal trainers are here to guide you through your fitness journey, providing customized workout plans and nutritional advice.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Gym Gallery</h2>
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Gym equipment">
+                <img src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Bodybuilder working out">
+                <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Sunbed">
+                <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Weight training">
+            </div>
+        </section>
+
+        <section id="pricing">
+            <h2>Membership Options</h2>
+            <div class="pricing">
+                <div class="price-card">
+                    <h3>Basic</h3>
+                    <p class="price">$49.99/month</p>
+                    <ul>
+                        <li>Full gym access</li>
+                        <li>Locker room access</li>
+                        <li>1 free personal training session</li>
+                    </ul>
+                    <a href = "./plan.html" class = "cta-button">Get Pass</a>
+                </div>
+                <div class="price-card">
+                    <h3>Premium</h3>
+                    <p class="price">$99.99/month</p>
+                    <ul>
+                        <li>Full gym access</li>
+                        <li>Unlimited sunbed use</li>
+                        <li>3 free personal training sessions</li>
+                        <li>Access to group classes</li>
+                    </ul>
+                    <a href = "./plan.html" class = "cta-button">Get Pass</a>
+                </div>
+                <div class="price-card">
+                    <h3>Day Pass</h3>
+                    <p class="price">$15</p>
+                    <ul>
+                        <li>Full gym access for one day</li>
+                        <li>Locker room access</li>
+                        <li>1 sunbed session</li>
+                    </ul>
+                    <a href = "./plan.html" class = "cta-button">Get Pass</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" style="background-color: #fff;">
+            <h2>Contact Us</h2>
+            <p>Address: 123 Fitness Street, Muscleton, ST 12345</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Email: info@onelifegym.com</p>
+            <p>Hours: Monday-Friday 5AM-11PM, Saturday-Sunday 7AM-9PM</p>
+        </section>
+    </main>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetElement = document.querySelector(this.getAttribute('href'));
+            if (targetElement) {
+              targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+          });
+        });
+      </script>
+    <footer>
+        <p>&copy; 2025 OneLife Gym. All rights reserved.</p>
+    </footer>
+</body>
+</html>
